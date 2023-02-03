@@ -34,6 +34,8 @@ namespace Advanced_Rendering
 		Microsoft::WRL::ComPtr<ID3D11Buffer>		m_vertexBuffer;
 		Microsoft::WRL::ComPtr<ID3D11Buffer>		m_indexBuffer;
 		Microsoft::WRL::ComPtr<ID3D11VertexShader>	m_vertexShader;
+		Microsoft::WRL::ComPtr<ID3D11VertexShader>	m_vertexShader1;
+		Microsoft::WRL::ComPtr<ID3D11VertexShader>	m_vertexShader2;
 		Microsoft::WRL::ComPtr<ID3D11PixelShader>	m_pixelShader;
 		Microsoft::WRL::ComPtr<ID3D11Buffer>		m_constantBuffer;
 
