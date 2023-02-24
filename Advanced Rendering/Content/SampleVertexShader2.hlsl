@@ -5,31 +5,21 @@ cbuffer ModelViewProjectionConstantBuffer : register(b0)
 	matrix projection;
 };
 
-struct VertexShaderInput
+struct VS_Canvas
 {
-	float3 pos : POSITION;
-	float3 color : COLOR0;
+	float4 Position   : SV_POSITION;
+	float2 canvasXY  : TEXCOORD0;
 };
 
-struct PixelShaderInput
+
+VS_Canvas main(float4 vPos : POSITION)
 {
-	float4 pos : SV_POSITION;
-	float3 color : COLOR0;
-};
+	VS_Canvas Output;
 
-PixelShaderInput main(VertexShaderInput input)
-{
-	input.pos.xyz += float3(1.5f, 0.0f, -2.0f);
+	Output.Position = float4(sign(vPos.xy), 0, 1);
 
-	PixelShaderInput output;
-	float4 pos = float4(input.pos, 1.0f);
+	float AspectRatio = projection._m11 / projection._m00;
+	Output.canvasXY = sign(vPos.xy) * float2(AspectRatio, 1.0);
 
-	pos = mul(pos, model);
-	pos = mul(pos, view);
-	pos = mul(pos, projection);
-	output.pos = pos;
-
-	output.color = input.color;
-
-	return output;
+	return Output;
 }
