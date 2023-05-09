@@ -1,0 +1,3 @@
+https://forums.unrealengine.com/t/ichannel0-file-sbbuffera-glsl-how-to-convert-to-hlsl-version/500733/4
+https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-load#example
+SEA - https://www.shadertoy.com/view/4ljXWh

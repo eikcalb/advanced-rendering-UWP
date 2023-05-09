@@ -2,14 +2,14 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Common">
-      <UniqueIdentifier>5f64a5be-3b3d-4fe1-b191-831afb23d699</UniqueIdentifier>
+      <UniqueIdentifier>291dd68e-07d8-4891-91b9-e02d3dcb6f27</UniqueIdentifier>
     </Filter>
     <Filter Include="Assets">
-      <UniqueIdentifier>a12dd1af-23c0-4aea-a49e-a435765bc320</UniqueIdentifier>
+      <UniqueIdentifier>1f5b2885-72c2-424d-a3d1-76358c3b33b3</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
     </Filter>
     <Filter Include="Content">
-      <UniqueIdentifier>4b887a3c-ab96-4ff9-af48-223ebec3c8fe</UniqueIdentifier>
+      <UniqueIdentifier>457ea590-8a38-4ba2-98c2-68d8515c69ca</UniqueIdentifier>
     </Filter>
     <ClInclude Include="Common\DirectXHelper.h">
       <Filter>Common</Filter>
@@ -65,12 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
-    <ClCompile Include="Advanced_RenderingMain.cpp" />
+    <ClCompile Include="ACWMain.cpp" />
     <ClCompile Include="pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
-    <ClInclude Include="Advanced_RenderingMain.h" />
+    <ClInclude Include="ACWMain.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -82,7 +82,11 @@
     <AppxManifest Include="Package.appxmanifest" />
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="Content\SampleVertexShader1.hlsl" />
-    <FxCompile Include="Content\SampleVertexShader2.hlsl" />
+    <FxCompile Include="Content\SeaPixelShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt" />
   </ItemGroup>
 </Project>

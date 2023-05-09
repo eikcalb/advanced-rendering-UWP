@@ -3,7 +3,7 @@
 
 #include <ppltasks.h>
 
-using namespace LAB2;
+using namespace ACW;
 
 using namespace concurrency;
 using namespace Windows::ApplicationModel;
@@ -85,7 +85,7 @@ void App::Load(Platform::String^ entryPoint)
 {
 	if (m_main == nullptr)
 	{
-		m_main = std::unique_ptr<LAB2Main>(new LAB2Main(m_deviceResources));
+		m_main = std::unique_ptr<ACWMain>(new ACWMain(m_deviceResources));
 	}
 }
 

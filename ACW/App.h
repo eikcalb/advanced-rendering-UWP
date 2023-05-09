@@ -2,9 +2,9 @@
 
 #include "pch.h"
 #include "Common\DeviceResources.h"
-#include "Advanced_RenderingMain.h"
+#include "ACWMain.h"
 
-namespace Advanced_Rendering
+namespace ACW
 {
 	// Main entry point for our app. Connects the app with the Windows shell and handles application lifecycle events.
 	ref class App sealed : public Windows::ApplicationModel::Core::IFrameworkView
@@ -37,7 +37,7 @@ namespace Advanced_Rendering
 
 	private:
 		std::shared_ptr<DX::DeviceResources> m_deviceResources;
-		std::unique_ptr<Advanced_RenderingMain> m_main;
+		std::unique_ptr<ACWMain> m_main;
 		bool m_windowClosed;
 		bool m_windowVisible;
 	};

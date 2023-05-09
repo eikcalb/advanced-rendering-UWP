@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="3c608ad5-159e-4622-ab48-393e76576524"
-    Publisher="CN=690846"
+    Name="447a4ab4-66e9-4d5f-bbf5-3b510a6b8f92"
+    Publisher="CN=Derek Maro Okeowo"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="3c608ad5-159e-4622-ab48-393e76576524" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="447a4ab4-66e9-4d5f-bbf5-3b510a6b8f92" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>LAB2</DisplayName>
-    <PublisherDisplayName>690846</PublisherDisplayName>
+    <DisplayName>ACW</DisplayName>
+    <PublisherDisplayName>Derek Maro Okeowo</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="LAB2.App">
+      EntryPoint="ACW.App">
       <uap:VisualElements
-        DisplayName="LAB2"
+        DisplayName="ACW"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="LAB2"
+        Description="ACW"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

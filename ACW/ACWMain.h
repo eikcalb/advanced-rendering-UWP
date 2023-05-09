@@ -6,13 +6,13 @@
 #include "Content\SampleFpsTextRenderer.h"
 
 // Renders Direct2D and 3D content on the screen.
-namespace LAB2
+namespace ACW
 {
-	class LAB2Main : public DX::IDeviceNotify
+	class ACWMain : public DX::IDeviceNotify
 	{
 	public:
-		LAB2Main(const std::shared_ptr<DX::DeviceResources>& deviceResources);
-		~LAB2Main();
+		ACWMain(const std::shared_ptr<DX::DeviceResources>& deviceResources);
+		~ACWMain();
 		void CreateWindowSizeDependentResources();
 		void Update();
 		bool Render();
